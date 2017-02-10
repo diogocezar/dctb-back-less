@@ -1,7 +1,7 @@
 {
-	"allowed" : {
+	"allowed": {
 		"www.example1.com" : {
-			"mail"          : {
+			"mail" : {
 				"template" : "../assets/templates/mail.html",
 				"from"     : "example@example1.com",
 				"subject"  : "Your Subject",
@@ -16,7 +16,7 @@
 			}
 		},
 		"www.example2.com" : {
-			"mail"          : {
+			"mail" : {
 				"template" : "../assets/templates/mail.html",
 				"from"     : "example@example2.com",
 				"subject"  : "Your Subject",
@@ -31,11 +31,24 @@
 			}
 		},
 	},
-	"configs" : {
-		"mail" : {
-			"mail_sendgrid_key"  : "<sendgrid_key>",
-			"mail_success"       : "Email successfully sent.",
-			"mail_error"		 : "Sorry, email can not be sent."
-		}
+	"configs": {
+		"logs": true,
+		"dir": {
+			"access_log": "./logs/access_log.txt"
+		},
+		"mail": {
+			"mail_sendgrid_key": "<sendgrid-key>"
+		},
+		"key": "<your-key>"
+	},
+	"messages": {
+		"origin-no-allowed": "Origin of call is not allowed.",
+		"token-no-match-or-no-exists": "Token no match or not exists.",
+		"data-is-empty": "Data is empty.",
+		"mail-success": "Email successfully sent.",
+		"mail-error": "Sorry, email can not be sent.",
+		"invalid-host": "Invalid Host.",
+		"sizes-not-match": "Size of values not match with fields.",
+		"field-email-required": "Field email is required."
 	}
 }

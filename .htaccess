@@ -1,0 +1,8 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule ^send-mail?$ ./app/BackLess.php?method=sendMail [NC,L]
+	RewriteRule ^generate-token/([^/]+)/?$ ./app/BackLess.php?method=generateToken&host=$1
+</IfModule>

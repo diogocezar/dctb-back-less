@@ -1,0 +1,41 @@
+{
+	"allowed" : {
+		"www.example1.com" : {
+			"mail"          : {
+				"template" : "../assets/templates/mail.html",
+				"from"     : "example@example1.com",
+				"subject"  : "Your Subject",
+				"color"    : "#2a63de",
+				"logo"     : "http://example1.com/assets/images/logo.png",
+				"line_1"   : "Line 1 of email",
+				"line_2"   : "Line 2 of email",
+				"to"       : {
+					"Name 1" : "name1@example1.com",
+					"Name 2" : "name2@example1.com"
+				}
+			}
+		},
+		"www.example2.com" : {
+			"mail"          : {
+				"template" : "../assets/templates/mail.html",
+				"from"     : "example@example2.com",
+				"subject"  : "Your Subject",
+				"color"    : "#2a63de",
+				"logo"     : "http://example2.com/assets/images/logo.png",
+				"line_1"   : "Line 1 of email",
+				"line_2"   : "Line 2 of email",
+				"to"       : {
+					"Name 1" : "name1@example2.com",
+					"Name 2" : "name2@example2.com"
+				}
+			}
+		},
+	},
+	"configs" : {
+		"mail" : {
+			"mail_sendgrid_key"  : "<sendgrid_key>",
+			"mail_success"       : "Email successfully sent.",
+			"mail_error"		 : "Sorry, email can not be sent."
+		}
+	}
+}
